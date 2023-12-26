@@ -2,35 +2,31 @@ SDNProject/
 │
 ├── ryu_app/                  # Cartella per le applicazioni Ryu
 │   ├── ofctl_rest.py         # Gestione delle REST API per il controller Ryu
-│   ├── rest_topology.py      # REST API per la topologia di rete
-│   └── ...                   # Altri script Ryu se presenti
+│   └── rest_topology.py      # REST API per la topologia di rete 
 │
-├── topologies/                 # Script per definire la topologia di rete
+├── topologies/               
 │   ├── topology.py           # Script generale della topologia
-│   ├── star/                 # Cartella per la topologia a stella
-│   │    └── star.py           # Script della topologia a stella
-│   ├── 2swiches/
-│   │    └── 2swiches.py 
-│   ├── fatTree/
-│   │    └── fatTreeDC_4.py    
-│   ├── minimal/
-│   │    └── minimalTopo.py          # Altri script per le topologie se presenti
-│   └── 2star/
-│   │    └── 2star.py     # Script per la generazione del grafo della topologia
-├── html/                     # HTML files
+│   ├── star.py
+│   ├── 2swiches.py
+│   ├── fatTree.py
+│   ├── minimal.py
+│   └── 2star.py
+│ 
+├── html/                     
 │   └── index.html            # File HTML principale
 │
-├── js/                       # JavaScript files
+├── js/                       
 │   ├── app.js                # App Vue.js
 │   ├── index.js              # Script principale del server Express
 │   ├── topology.js           # Gestione dei dati della topologia
-│   └── ...                   # Altri script JS se presenti
+│   └── next.js               # Next script JS 
 │
-├── css/                      # Fogli di stile CSS
-│   └── ...                   # File CSS
+├── css/
+│   ├── style.css             # Next script css
+│   └── style+.css            # File CSS
 │
 ├── assets/                   # Risorse come immagini e icone
 │   ├── host.svg              # Icona dell'host
 │   └── router.svg            # Icona del router
 │
-└── [altri file e directory]  # Altri file e directory come necessario
+└── gui_start.py              #File per far partire gui
